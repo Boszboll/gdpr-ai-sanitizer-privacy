@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa privacy — GDPR AI-Sanitizer</title>
+<meta name="description" content="Informativa sul trattamento dei dati personali dell'estensione Chrome GDPR AI-Sanitizer.">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: #f3f4f6;
+    color: #111827;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+  }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 28px 0 8px; }
+  h3 { font-size: 15px; margin: 20px 0 6px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .meta { color: #6b7280; font-size: 13px; margin-bottom: 24px; }
+  .box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin: 0 0 20px;
+  }
+  .box p:last-child { margin-bottom: 0; }
+  code { background: #f3f4f6; padding: 1px 5px; border-radius: 5px; font-size: 13px; }
+  a { color: #2563eb; }
+  hr { border: 0; border-top: 1px solid #e5e7eb; margin: 32px 0; }
+  .en { font-size: 14px; color: #374151; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Informativa privacy</h1>
+  <p class="meta">Estensione Chrome «GDPR AI-Sanitizer» · Ultimo aggiornamento: 11 novembre 2026</p>
+
+  <div class="box">
+    <p><strong>In breve:</strong> l'estensione maschera i dati personali <em>sul tuo dispositivo</em>.
+    Il testo che selezioni non viene inviato a noi né a terzi e non viene conservato.
+    L'unica connessione a Internet serve a scaricare una volta sola il modello di intelligenza
+    artificiale da Hugging Face. Non usiamo cookie, non tracciamo nulla, non abbiamo account utente.</p>
+  </div>
+
+  <h2>1. Chi è il titolare del trattamento</h2>
+  <p>
+    Il titolare è lo sviluppatore dell'estensione, contattabile all'indirizzo
+    <a href="mailto:gdpraisanitizer@gmail.com">gdpraisanitizer@gmail.com</a>.
+    Non è nominato un responsabile della protezione dei dati (DPO), perché non ricorrono
+    i presupposti previsti dall'art. 37 GDPR.
+  </p>
+
+  <h2>2. A cosa serve l'estensione</h2>
+  <p>
+    L'estensione aiuta a sostituire dati personali (email, telefoni, codici fiscali, IBAN, carte,
+    documenti, indirizzi, credenziali, nomi) con segnaposto, prima di incollare un testo in uno
+    strumento di intelligenza artificiale. È uno strumento di supporto: non garantisce
+    l'anonimizzazione completa e richiede sempre una revisione manuale.
+  </p>
+
+  <h2>3. Quali dati tratta e dove</h2>
+
+  <h3>3.1 Testo selezionato — solo sul dispositivo</h3>
+  <ul>
+    <li>Il testo che selezioni viene letto <strong>solo nella scheda in cui hai scelto la voce di menu</strong>,
+      grazie al permesso temporaneo <code>activeTab</code> concesso dal tuo clic.</li>
+    <li>Viene elaborato dalle espressioni regolari e dal modello AI locale <strong>dentro il browser</strong>.</li>
+    <li><strong>Non viene trasmesso</strong> a nessun server, né nostro né di terzi, e <strong>non viene conservato</strong>:
+      resta nella memoria della scheda finché la finestra di revisione è aperta e sparisce alla chiusura.</li>
+    <li>L'estensione non legge password, non accede ai campi di altri siti se non quando selezioni il testo
+      e non invia nulla in background.</li>
+  </ul>
+
+  <h3>3.2 Dati salvati localmente</h3>
+  <ul>
+    <li><strong>Contatore giornaliero degli utilizzi</strong> (data locale e numero di utilizzi).</li>
+    <li><strong>Stato della licenza</strong> (codice di sblocco o licenza firmata, data di attivazione).</li>
+    <li><strong>Cache del modello AI</strong> (i file del modello scaricati, in IndexedDB).</li>
+  </ul>
+  <p>
+    Questi dati restano nella memoria locale del browser, non sono leggibili da noi e vengono
+    <strong>cancellati automaticamente quando disinstalli l'estensione</strong> o svuoti i dati delle estensioni.
+  </p>
+
+  <h3>3.3 Connessioni di rete</h3>
+  <ul>
+    <li><strong>Hugging Face</strong> (<code>huggingface.co</code>, <code>*.hf.co</code>): al primo utilizzo
+      l'estensione scarica i file del modello AI (circa 135 MB). Come in qualsiasi download, il fornitore
+      riceve indirizzo IP, data e ora e dati tecnici della richiesta. <strong>Nessuna parte del testo selezionato
+      viene inviata.</strong></li>
+    <li><strong>Stripe</strong> (<code>buy.stripe.com</code>): solo se scegli di acquistare la versione PRO.
+      Il pagamento avviene su una pagina esterna, con l'informativa privacy di Stripe. Noi riceviamo
+      dall'acquirente solo quanto serve a fornire assistenza (ad esempio l'email indicata nel pagamento).</li>
+    <li>Nessun'altra connessione: il codice dell'estensione e i file WASM sono inclusi nel pacchetto,
+      non caricati da una CDN, e non c'è alcun servizio di analisi o telemetria.</li>
+  </ul>
+
+  <h3>3.4 Cookie</h3>
+  <p>
+    L'estensione non installa cookie e non usa identificatori pubblicitari o di tracciamento.
+    La pagina di pagamento è ospitata da Stripe e segue l'informativa e i cookie di Stripe,
+    non i nostri.
+  </p>
+
+  <h3>3.5 Dati che non trattiamo</h3>
+  <p>
+    Non creiamo account, non chiediamo nome, indirizzo o telefono, non raccogliamo statistiche
+    d'uso, non registriamo gli errori su server remoti e non conserviamo i testi elaborati.
+    L'email dell'acquirente ci arriva solo tramite Stripe, per erogare il prodotto e fornire
+    assistenza.
+  </p>
+
+  <h2>4. Base giuridica</h2>
+  <ul>
+    <li><strong>Esecuzione del servizio richiesto</strong> (art. 6.1.b GDPR): l'elaborazione del testo che
+      selezioni avviene su tua richiesta, esclusivamente sul tuo dispositivo.</li>
+    <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): mantenere il contatore e lo stato della licenza
+      per erogare il modello freemium e prevenire abusi.</li>
+    <li><strong>Obblighi di legge</strong> (art. 6.1.c GDPR): conservazione dei documenti fiscali relativi
+      agli acquisti, per il tempo previsto dalla legge.</li>
+  </ul>
+
+  <h2>5. Conferimento dei dati: obbligatorio o facoltativo?</h2>
+  <p>
+    L'uso dell'estensione è sempre facoltativo. Il conferimento dei dati è necessario solo per
+    ottenere le finalità indicate: se non fornisci un testo da elaborare, l'estensione non ha nulla
+    su cui lavorare; se non fornisci un'email a Stripe, non possiamo consegnarti il codice di sblocco
+    né rispondere a una richiesta di assistenza. Non fornire i dati non comporta conseguenze diverse
+    dalla impossibilità di usare quella specifica funzione.
+  </p>
+
+  <h2>6. Processi decisionali automatizzati e profilazione</h2>
+  <p>
+    Non effettuiamo alcun processo decisionale automatizzato che produca effetti giuridici o
+    incida in modo analogo significativamente sulla tua persona, e non profiliamo gli utenti.
+    Le espressioni regolari e il modello AI locale producono solo suggerimenti di mascheratura
+    che decidi tu se accettare.
+  </p>
+
+  <h2>7. Revoca del consenso</h2>
+  <p>
+    Il trattamento non si basa sul consenso: si fonda sull'esecuzione del servizio che richiedi
+    e, per gli aspetti tecnici, sul legittimo interesse. Puoi comunque interrompere in qualsiasi
+    momento l'elaborazione disinstallando l'estensione.
+  </p>
+
+  <h2>8. Ruoli rispetto ai dati che elabori</h2>
+  <p>
+    Quando usi l'estensione su testi che contengono dati personali di altre persone, il titolare del
+    trattamento sei tu (o l'organizzazione per cui lavori). Lo sviluppatore dell'estensione non riceve
+    quei dati e non li tratta in alcun modo: si limita a fornire lo strumento software.
+  </p>
+
+  <h2>9. Destinatari e trasferimenti</h2>
+  <p>
+    Non vendiamo, non affittiamo e non condividiamo dati personali per finalità commerciali.
+    Gli unici fornitori coinvolti, indicati per nome come richiesto dalle linee guida EDPB, sono
+    <strong>Hugging Face, Inc.</strong> (download dei file del modello, Stati Uniti) e
+    <strong>Stripe Payments Europe, Ltd.</strong> (pagamenti, Irlanda). Entrambi operano con
+    clausole contrattuali standard per i trasferimenti extra-UE. Non trasferiamo dati in altri Paesi.
+  </p>
+
+  <h2>10. Per quanto tempo</h2>
+  <p>
+    Il testo selezionato non viene conservato. Contatore, licenza e cache del modello restano in locale
+    finché non disinstalli l'estensione. I dati fiscali degli acquisti sono conservati per il periodo
+    previsto dalla normativa (di norma 10 anni).
+  </p>
+
+  <h2>11. I tuoi diritti</h2>
+  <p>
+    Puoi esercitare in qualsiasi momento i diritti previsti dagli artt. 15-22 GDPR (accesso, rettifica,
+    cancellazione, limitazione, opposizione, portabilità) scrivendo a
+    <a href="mailto:gdpraisanitizer@gmail.com">gdpraisanitizer@gmail.com</a>. Rispondiamo entro un mese
+    dal ricevimento, come previsto dall'art. 12.3 GDPR. Poiché non conserviamo i testi elaborati, non
+    esistono dati su cui esercitare l'accesso al di fuori della corrispondenza di assistenza e dei dati
+    fiscali. Se ritieni che il trattamento violi la normativa puoi rivolgerti al Garante per la protezione
+    dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener noreferrer" target="_blank">garanteprivacy.it</a>).
+  </p>
+
+  <h2>12. Utenti fuori dall'Unione europea</h2>
+  <p>
+    L'estensione non è rivolta specificamente ad altri mercati. Se la usi fuori dall'UE, il
+    trattamento resta quello descritto: nessun dato personale lascia il tuo dispositivo e l'unico
+    contatto con noi è la corrispondenza di assistenza. Non vendiamo dati personali e non li
+    condividiamo per pubblicità comportamentale, come richiesto anche dal CCPA/CPRA californiano.
+  </p>
+
+  <h2>13. Sicurezza</h2>
+  <p>
+    L'estensione non trasmette il testo, quindi non esiste un canale di rete da proteggere. I dati locali
+    sono protetti dal modello di sicurezza di Chrome (isolamento dell'origine dell'estensione). Il
+    contenuto dell'editor di revisione vive nel DOM della pagina: su siti non fidati evita di incollare
+    dati ulteriori.
+  </p>
+
+  <h2>14. Minori</h2>
+  <p>L'estensione non è destinata a persone di età inferiore a 14 anni e non raccoglie dati di minori.</p>
+
+  <h2>15. Modifiche</h2>
+  <p>
+    Eventuali modifiche a questa informativa saranno pubblicate su questa pagina con la data di
+    aggiornamento. Le modifiche sostanziali saranno segnalate anche nella scheda dell'estensione.
+  </p>
+
+  <hr>
+
+  <h2 class="en">English summary (for store review)</h2>
+  <p class="en">
+    GDPR AI-Sanitizer masks personal data <strong>entirely on the user's device</strong>. Selected text is
+    processed locally by regular expressions and a local AI model; it is <strong>never transmitted</strong>
+    to us or to third parties and is <strong>never stored</strong>. The only network requests download the
+    model files once from <code>huggingface.co</code> (IP address and standard request metadata only, no
+    user text) and, if the user chooses to buy the PRO version, open a Stripe-hosted checkout page. The
+    extension sets no cookies, has no analytics and no user accounts. Locally stored data (daily usage
+    counter, licence state, model cache) lives in <code>chrome.storage.local</code> and IndexedDB and is
+    removed when the extension is uninstalled. Contact:
+    <a href="mailto:gdpraisanitizer@gmail.com">gdpraisanitizer@gmail.com</a>.
+  </p>
+</main>
+</body>
+</html>
