@@ -152,8 +152,11 @@
       hosting (circa 9 MB, una sola volta, poi restano nella cache del browser) e l'esecuzione
       avviene sul tuo dispositivo. Le immagini delle pagine non vengono inviate da nessuna parte.</li>
     <li><strong>Memoria locale della pagina.</strong> Il browser conserva i file pubblici del
-      modello AI (IndexedDB) e le risorse della pagina per l'uso offline (Cache Storage). Nessun
-      contenuto dell'utente. Si eliminano svuotando i dati del sito.</li>
+      modello AI (IndexedDB) e le risorse della pagina per l'uso offline (Cache Storage). Se
+      compili l'elenco «parole da non toccare», quello resta in <code>localStorage</code>: sono
+      solo le parole che hai scelto di lasciare intatte, non il documento, e le cancelli con
+      «Svuota elenco». Nessun altro contenuto dell'utente viene salvato; si elimina tutto
+      svuotando i dati del sito.</li>
     <li><strong>Nessun cookie</strong> viene installato dalla pagina, nessun analytics, nessun
       font o script di terze parti.</li>
   </ul>
