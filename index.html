@@ -73,6 +73,12 @@
     strumento di intelligenza artificiale. È uno strumento di supporto: non garantisce
     l'anonimizzazione completa e richiede sempre una revisione manuale.
   </p>
+  <p>
+    Le stesse funzioni sono disponibili in una <strong>versione web</strong>, che non richiede
+    installazione e accetta anche file .txt, .csv, .docx, .xlsx e PDF di testo, restituendo il
+    risultato negli stessi formati. La versione web elabora tutto nel browser esattamente come
+    l'estensione: le differenze sono descritte nella sezione 3.6.
+  </p>
 
   <h2>3. Quali dati tratta e dove</h2>
 
@@ -125,6 +131,28 @@
     L'email dell'acquirente ci arriva solo tramite Stripe, per erogare il prodotto e fornire
     assistenza.
   </p>
+
+  <h3>3.6 Versione web e hosting del sito</h3>
+  <p>
+    La versione web è una <strong>pagina statica</strong>: non esiste un server applicativo che
+    riceva o elabori i contenuti. Il testo incollato e i file caricati vengono letti e trattati
+    dalla pagina nel browser, e non vengono mai inviati.
+  </p>
+  <ul>
+    <li><strong>Hosting.</strong> Le pagine sono pubblicate tramite <strong>GitHub Pages</strong>
+      (GitHub, Inc., Stati Uniti). Come qualunque sito web, l'host riceve i dati tecnici della
+      richiesta: <strong>indirizzo IP, data e ora, tipo di browser, pagina richiesta</strong>.
+      Questi dati riguardano la visita, non il contenuto elaborato. Il trasferimento verso gli
+      Stati Uniti avviene sulla base delle clausole contrattuali tipo del fornitore.</li>
+    <li><strong>File caricati.</strong> L'estrazione del testo da .docx, .xlsx, .csv e PDF avviene
+      in memoria nella scheda, con librerie incluse nel sito. Il file non viene copiato, salvato
+      o trasmesso.</li>
+    <li><strong>Memoria locale della pagina.</strong> Il browser conserva i file pubblici del
+      modello AI (IndexedDB) e le risorse della pagina per l'uso offline (Cache Storage). Nessun
+      contenuto dell'utente. Si eliminano svuotando i dati del sito.</li>
+    <li><strong>Nessun cookie</strong> viene installato dalla pagina, nessun analytics, nessun
+      font o script di terze parti.</li>
+  </ul>
 
   <h2>4. Base giuridica</h2>
   <ul>
