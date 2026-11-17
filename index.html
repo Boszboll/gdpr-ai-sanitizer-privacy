@@ -110,9 +110,6 @@
       l'estensione scarica i file del modello AI (circa 135 MB). Come in qualsiasi download, il fornitore
       riceve indirizzo IP, data e ora e dati tecnici della richiesta. <strong>Nessuna parte del testo selezionato
       viene inviata.</strong></li>
-    <li><strong>Stripe</strong> (<code>buy.stripe.com</code>): solo se scegli di acquistare la versione PRO.
-      Il pagamento avviene su una pagina esterna, con l'informativa privacy di Stripe. Noi riceviamo
-      dall'acquirente solo quanto serve a fornire assistenza (ad esempio l'email indicata nel pagamento).</li>
     <li>Nessun'altra connessione: il codice dell'estensione e i file WASM sono inclusi nel pacchetto,
       non caricati da una CDN, e non c'è alcun servizio di analisi o telemetria.</li>
   </ul>
@@ -120,16 +117,12 @@
   <h3>3.4 Cookie</h3>
   <p>
     L'estensione non installa cookie e non usa identificatori pubblicitari o di tracciamento.
-    La pagina di pagamento è ospitata da Stripe e segue l'informativa e i cookie di Stripe,
-    non i nostri.
   </p>
 
   <h3>3.5 Dati che non trattiamo</h3>
   <p>
     Non creiamo account, non chiediamo nome, indirizzo o telefono, non raccogliamo statistiche
     d'uso, non registriamo gli errori su server remoti e non conserviamo i testi elaborati.
-    L'email dell'acquirente ci arriva solo tramite Stripe, per erogare il prodotto e fornire
-    assistenza.
   </p>
 
   <h3>3.6 Versione web e hosting del sito</h3>
@@ -165,19 +158,17 @@
   <ul>
     <li><strong>Esecuzione del servizio richiesto</strong> (art. 6.1.b GDPR): l'elaborazione del testo che
       selezioni avviene su tua richiesta, esclusivamente sul tuo dispositivo.</li>
-    <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): mantenere il contatore e lo stato della licenza
-      per erogare il modello freemium e prevenire abusi.</li>
-    <li><strong>Obblighi di legge</strong> (art. 6.1.c GDPR): conservazione dei documenti fiscali relativi
-      agli acquisti, per il tempo previsto dalla legge.</li>
+    <li><strong>Legittimo interesse</strong> (art. 6.1.f GDPR): mantenere il contatore d'uso e il codice
+      di sblocco per erogare lo strumento e prevenire abusi.</li>
   </ul>
 
   <h2>5. Conferimento dei dati: obbligatorio o facoltativo?</h2>
   <p>
-    L'uso dell'estensione è sempre facoltativo. Il conferimento dei dati è necessario solo per
-    ottenere le finalità indicate: se non fornisci un testo da elaborare, l'estensione non ha nulla
-    su cui lavorare; se non fornisci un'email a Stripe, non possiamo consegnarti il codice di sblocco
-    né rispondere a una richiesta di assistenza. Non fornire i dati non comporta conseguenze diverse
-    dalla impossibilità di usare quella specifica funzione.
+    L'uso dello strumento è sempre facoltativo. Il conferimento dei dati è necessario solo per
+    ottenere le finalità indicate: se non fornisci un testo da elaborare, non c'è nulla su cui
+    lavorare; se mi scrivi per avere il codice di sblocco, mi fornisci solo il recapito a cui
+    risponderti. Non fornire i dati non comporta conseguenze diverse dall'impossibilità di usare
+    quella specifica funzione.
   </p>
 
   <h2>6. Processi decisionali automatizzati e profilazione</h2>
@@ -205,17 +196,15 @@
   <h2>9. Destinatari e trasferimenti</h2>
   <p>
     Non vendiamo, non affittiamo e non condividiamo dati personali per finalità commerciali.
-    Gli unici fornitori coinvolti, indicati per nome come richiesto dalle linee guida EDPB, sono
-    <strong>Hugging Face, Inc.</strong> (download dei file del modello, Stati Uniti) e
-    <strong>Stripe Payments Europe, Ltd.</strong> (pagamenti, Irlanda). Entrambi operano con
-    clausole contrattuali standard per i trasferimenti extra-UE. Non trasferiamo dati in altri Paesi.
+    L'unico fornitore coinvolto, indicato per nome come richiesto dalle linee guida EDPB, è
+    <strong>Hugging Face, Inc.</strong> (download dei file del modello, Stati Uniti), che opera
+    con clausole contrattuali standard per i trasferimenti extra-UE. Non trasferiamo dati in altri Paesi.
   </p>
 
   <h2>10. Per quanto tempo</h2>
   <p>
-    Il testo selezionato non viene conservato. Contatore, licenza e cache del modello restano in locale
-    finché non disinstalli l'estensione. I dati fiscali degli acquisti sono conservati per il periodo
-    previsto dalla normativa (di norma 10 anni).
+    Il testo selezionato non viene conservato. Contatore, codice di sblocco e cache del modello
+    restano in locale finché non disinstalli l'estensione o svuoti i dati del sito.
   </p>
 
   <h2>11. I tuoi diritti</h2>
@@ -262,10 +251,9 @@
     processed locally by regular expressions and a local AI model; it is <strong>never transmitted</strong>
     to us or to third parties and is <strong>never stored</strong>. The only network requests download the
     model files once from <code>huggingface.co</code> (IP address and standard request metadata only, no
-    user text) and, if the user chooses to buy the PRO version, open a Stripe-hosted checkout page. The
-    extension sets no cookies, has no analytics and no user accounts. Locally stored data (daily usage
-    counter, licence state, model cache) lives in <code>chrome.storage.local</code> and IndexedDB and is
-    removed when the extension is uninstalled. Contact:
+    user text). The extension sets no cookies, has no analytics, no user accounts and no payments. Locally
+    stored data (daily usage counter, unlock code, model cache) lives in <code>chrome.storage.local</code>
+    and IndexedDB and is removed when the extension is uninstalled. Contact:
     <a href="mailto:gdpraisanitizer@gmail.com">gdpraisanitizer@gmail.com</a>.
   </p>
 </main>
