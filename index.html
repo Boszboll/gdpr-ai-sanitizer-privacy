@@ -48,14 +48,15 @@
 <body>
 <main>
   <h1>Informativa privacy</h1>
-  <p class="meta">Estensione Chrome «GDPR AI-Sanitizer» · Ultimo aggiornamento: 11 novembre 2026</p>
+  <p class="meta">GDPR AI-Sanitizer — estensione Chrome e versione web · Ultimo aggiornamento: 17 novembre 2026</p>
   <p class="meta">Informativa resa ai sensi dell'art. 13 del Regolamento (UE) 2016/679 («GDPR»).</p>
 
   <div class="box">
-    <p><strong>In breve:</strong> l'estensione maschera i dati personali <em>sul tuo dispositivo</em>.
-    Il testo che selezioni non viene inviato a noi né a terzi e non viene conservato.
-    L'unica connessione a Internet serve a scaricare una volta sola il modello di intelligenza
-    artificiale da Hugging Face. Non usiamo cookie, non tracciamo nulla, non abbiamo account utente.</p>
+    <p><strong>In breve:</strong> lo strumento maschera i dati personali <em>sul tuo dispositivo</em>,
+    sia dall'estensione sia dalla versione web. Il testo e i file che carichi non vengono inviati a
+    noi né a terzi e non vengono conservati. L'unica connessione verso l'esterno serve a scaricare
+    una volta sola il modello di intelligenza artificiale da Hugging Face. Non usiamo cookie, non
+    tracciamo nulla, non abbiamo account utente e non ci sono pagamenti.</p>
   </div>
 
   <h2>1. Chi è il titolare del trattamento</h2>
@@ -66,26 +67,30 @@
     i presupposti previsti dall'art. 37 GDPR.
   </p>
 
-  <h2>2. A cosa serve l'estensione</h2>
+  <h2>2. A cosa serve lo strumento</h2>
   <p>
-    L'estensione aiuta a sostituire dati personali (email, telefoni, codici fiscali, IBAN, carte,
+    Serve a sostituire dati personali (email, telefoni, codici fiscali, IBAN, carte,
     documenti, indirizzi, credenziali, nomi) con segnaposto, prima di incollare un testo in uno
-    strumento di intelligenza artificiale. È uno strumento di supporto: non garantisce
-    l'anonimizzazione completa e richiede sempre una revisione manuale.
+    strumento di intelligenza artificiale o di condividerlo. È uno strumento di supporto: non
+    garantisce l'anonimizzazione completa e richiede sempre una revisione manuale.
   </p>
   <p>
-    Le stesse funzioni sono disponibili in una <strong>versione web</strong>, che non richiede
-    installazione e accetta anche file .txt, .csv, .docx, .xlsx e PDF di testo, restituendo il
-    risultato negli stessi formati. La versione web elabora tutto nel browser esattamente come
-    l'estensione: le differenze sono descritte nella sezione 3.6.
+    Le stesse funzioni esistono in due forme: l'<strong>estensione</strong> per Chrome/Edge, che
+    agisce sul testo selezionato in una pagina, e la <strong>versione web</strong>, che non richiede
+    installazione e accetta anche file .txt, .csv, .docx, .xlsx e PDF — comprese le scansioni,
+    lette con un OCR eseguito sul dispositivo — restituendo il risultato negli stessi formati.
+    La versione web permette di scegliere quali pagine di un PDF leggere, di conservare un elenco
+    di parole da non toccare e di correggere il risultato prima di scaricarlo. Tutto viene
+    elaborato nel browser; le differenze rispetto all'estensione sono nella sezione 3.6.
   </p>
 
   <h2>3. Quali dati tratta e dove</h2>
 
-  <h3>3.1 Testo selezionato — solo sul dispositivo</h3>
+  <h3>3.1 Testo e file che elabori — solo sul tuo dispositivo</h3>
   <ul>
     <li>Il testo che selezioni viene letto <strong>solo nella scheda in cui hai scelto la voce di menu</strong>,
-      grazie al permesso temporaneo <code>activeTab</code> concesso dal tuo clic.</li>
+      grazie al permesso temporaneo <code>activeTab</code> concesso dal tuo clic; nella versione web,
+      solo ciò che incolli o carichi tu.</li>
     <li>Viene elaborato dalle espressioni regolari e dal modello AI locale <strong>dentro il browser</strong>.</li>
     <li><strong>Non viene trasmesso</strong> a nessun server, né nostro né di terzi, e <strong>non viene conservato</strong>:
       resta nella memoria della scheda finché la finestra di revisione è aperta e sparisce alla chiusura.</li>
